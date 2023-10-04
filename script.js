@@ -1,6 +1,5 @@
 parseCSV = (csv) => {
     let rows = csv.split("\n");
-    console.log(rows)
     let tableHTML = "<thead><tr>";
 
     // Assuming the first row contains headers
@@ -13,7 +12,6 @@ parseCSV = (csv) => {
     tableHTML += "</tr></thead><tbody>";
 
     // Generate table rows
-    console.log(rows[1])
     for (let i = 1; i < rows.length; i++) {
         let cells = rows[i].split(",");
         tableHTML += "<tr>";
